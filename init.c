@@ -8,15 +8,14 @@ void init(List* p) {
 		return;
 	}
 
-	Node* n = p->head;
+	Node* n;
 
 	while(!feof(fp)) {
 		fscanf("%s", n->title);
 		fscanf("%s", n->director);
 		fscanf("%d", n->time);
 		fscanf("%s", n->genre);
-		p->count++;
-		n = n->next;
+		insert(n->title, n->director, n->time, n->genre, p);
 	}
 
 }

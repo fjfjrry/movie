@@ -11,11 +11,11 @@ int search(char* title, List* p)
 	{
 		ret = strcmp(n->title, title);
 		if (ret == 0)
-		{
+		{/*
 			printf("%s", n->title);
 			printf("%s", n->director);
 			printf("%s", n->time);
-			printf("%s", n->genre);
+			printf("%s", n->genre);*/
 			break;
 		}
 		i++;

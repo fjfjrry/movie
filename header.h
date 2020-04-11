@@ -1,5 +1,7 @@
+
 #include <stdio.h>
 #include <malloc.h>
+
 #define TITLE_SIZE 20
 #define DIRECTOR_SIZE 20
 #define GENRE_SIZE 10
@@ -27,5 +29,6 @@ void init(List *p);
 void insert(char* title, char* director, int time, char* genre, List* p);
 void del(List* p, int number);
 void edit(int order, char* title, char* director, int time, char* genre);
-//search
+int search(char* title, List* p);
+void release(List* p);
 //sort

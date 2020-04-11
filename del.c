@@ -1,7 +1,9 @@
 #include "header.h"
 
-void del(List* p, int number) {
+void del(List* p, int number){
 	
+	p->count--;
+
 	if (number == 1) {
 		Node* node = p->head;
 		Node* nextNode = node->next;

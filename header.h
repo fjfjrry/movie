@@ -25,7 +25,7 @@ typedef struct _list {
 void show(List *p);
 void init(List *p);
 void insert(char* title, char* director, int time, char* genre, List* p);
-void del(List* p);
+void del(List* p, int number);
 void edit(int order, char* title, char* director, int time, char* genre);
-void search(char* title, List* p);
+//search
 //sort

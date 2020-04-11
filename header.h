@@ -27,5 +27,5 @@ void init(List *p);
 void insert(char* title, char* director, int time, char* genre, List* p);
 void del(List* p);
 void edit(int order, char* title, char* director, int time, char* genre);
-//search
+void search(char* title, List* p);
 //sort

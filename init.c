@@ -13,12 +13,14 @@ void init(List* p) {
 
 	Node* n = (Node*)malloc(sizeof(Node));
 
-	while(!feof(fp)) {
+	while(1) {
+		
 		fscanf(fp, "%s", n->title);
 		fscanf(fp, "%s", n->director);
 		fscanf(fp, "%d", &(n->time));
 		fscanf(fp, "%s", n->genre);
+		if(feof(fp)) break;
 		insert(n->title, n->director, n->time, n->genre, p);
 	}
-
+	fclose(fp);
 }

@@ -31,4 +31,4 @@ void del(List* p, int number);
 void edit(int order, char* title, char* director, int time, char* genre);
 int search(char* title, List* p);
 void release(List* p);
-//sort
+void sort(List* p, int mode);
